@@ -1,0 +1,26 @@
+#makefile settings for glib_compatibilty_tester all configurations
+
+LIBS_STATIC  = kernel32 Psapi Comdlg32 jvm Shlwapi
+LIB_DIRS     = $(G_LIB) $(G_JAVA_JDK_HOME)\lib $(G_BIN)
+OBJECTS_DIR  = ./bin/$(CONF)
+
+PROJECT_NAME = GLibSampleProject
+OUTPUT_EXT   = .exe
+
+INCLUDE_DIRS = \
+	$(realpath \
+		. \
+		$(G_INCLUDE)\common \
+		$(G_INCLUDE)\Win32 \
+)
+			
+#add here your source libs or set var SOURCES directly			
+												
+SOURCE_DIRS = \
+	$(realpath \
+		. \
+)
+	
+OUTPUT_DIR = ./bin/$(CONF)
+	
+LIBS_DIR   = $(G_BIN)

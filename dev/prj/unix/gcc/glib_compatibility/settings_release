@@ -1,0 +1,13 @@
+#makefile settings for glib_compatibilty configuration relase
+
+CFLAGS  = $(OPTIMIZED_CFLAGS)
+
+DEFINES =  \
+	G_OPTION_IS_BUILD=1 \
+	G_OPTION_IS_DLL=1 \
+
+LINKER_OPTIONS = -shared
+
+OUTPUT_SUFFIX =
+OUTPUT_EXT    = .so
+OUTPUT_DIR    = $(G_BIN)

@@ -1,0 +1,16 @@
+Gatelib 2.1.507 Release Note
+
+Precondition:
+	Windows:
+	- MS Visual Studio 2005
+	- MinGW 4.7
+	- Java JDK v7 ( java is used for message box and exception window)
+
+	Linux(tested on ubuntu):
+	- gcc 4.7
+	- Java JDK v7 ( java is used for message box and exception window)
+
+What's new.
+	- g::mthread multithread library was added.
+	- Improved support for automatic code generation (references and signal) with G_ASSIST.
+	- Improved exception handling (G_EXC_x macro support improved).

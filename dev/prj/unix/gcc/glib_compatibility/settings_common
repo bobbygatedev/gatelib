@@ -1,0 +1,21 @@
+#makefile settings for glib_compatibility all configurations
+
+PROJECT_NAME = glib_compatibility
+
+LIBS           = pthread rt dl
+LIB_DIRS       = $(G_LIB) $(G_BIN)
+OBJECTS_DIR    = $(G_INTERMEDIATE)/$(PROJECT_NAME)/$(CONF)
+
+OUTPUT_PREFIX = lib
+INCLUDE_DIRS = \
+	$(G_INCLUDE)/common \
+	$(G_INCLUDE)/unix \
+	$(G_SOURCE)/common \
+	$(G_SOURCE)/unix \
+	$(G_SOURCE)/unix/pthreads \
+	${G_JAVA_INCLUDE} \
+	${G_JAVA_INCLUDE}/unix
+														
+SOURCE_DIRS = \
+	$(G_SOURCE)/common \
+	$(G_SOURCE)/unix \

@@ -1,0 +1,11 @@
+#makefile settings for glib_compatibilty configuration relase
+
+CFLAGS  = $(OPTIMIZED_CFLAGS)
+
+DEFINES = \
+	G_OPTION_IS_BUILD=1 \
+	G_OPTION_IS_DLL=1 \
+
+OUTPUT_SUFFIX = _static
+OUTPUT_EXT    = .a
+OUTPUT_DIR    = $(G_LIB)

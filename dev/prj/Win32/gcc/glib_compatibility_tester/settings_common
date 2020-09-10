@@ -1,0 +1,26 @@
+#makefile settings for glib_compatibilty_tester all configurations
+
+LIBS_STATIC  = kernel32 Psapi Comdlg32 jvm Shlwapi
+LIB_DIRS     = $(G_LIB) $(G_JAVA_JDK_HOME)\lib $(G_BIN)
+OBJECTS_DIR  = $(realpath $(G_INTERMEDIATE))/$(PROJECT_NAME)/$(CONF)
+
+PROJECT_NAME = glib_compatibility_tester_gcc
+OUTPUT_EXT   = .exe
+
+INCLUDE_DIRS = \
+	$(realpath \
+		$(G_SOURCE)\Test\common \
+		$(G_SOURCE)\Test\Win32 \
+		$(G_INCLUDE)\common \
+		$(G_INCLUDE)\Win32 \
+)
+												
+SOURCE_DIRS = \
+	$(realpath \
+		$(G_SOURCE)\Test\common \
+		$(G_SOURCE)\Test\Win32 \
+)
+	
+OUTPUT_DIR = $(realpath $(G_OUTPUT))/tests
+	
+#LIBS_DIR   = $(G_BIN)

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GLib2005.Full", "glib_compatibility.vcproj", "{E895AF36-9494-4737-A05A-C61473C476DE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		DebugDll|Win32 = DebugDll|Win32
+		Release|Win32 = Release|Win32
+		ReleaseDll|Win32 = ReleaseDll|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E895AF36-9494-4737-A05A-C61473C476DE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E895AF36-9494-4737-A05A-C61473C476DE}.Debug|Win32.Build.0 = Debug|Win32
+		{E895AF36-9494-4737-A05A-C61473C476DE}.DebugDll|Win32.ActiveCfg = DebugDll|Win32
+		{E895AF36-9494-4737-A05A-C61473C476DE}.DebugDll|Win32.Build.0 = DebugDll|Win32
+		{E895AF36-9494-4737-A05A-C61473C476DE}.Release|Win32.ActiveCfg = Release|Win32
+		{E895AF36-9494-4737-A05A-C61473C476DE}.Release|Win32.Build.0 = Release|Win32
+		{E895AF36-9494-4737-A05A-C61473C476DE}.ReleaseDll|Win32.ActiveCfg = ReleaseDll|Win32
+		{E895AF36-9494-4737-A05A-C61473C476DE}.ReleaseDll|Win32.Build.0 = ReleaseDll|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,9 @@
+   static ref<[ClsName]> g_cont_new ( [Parameters[,]: [[ParamBody]] ] , AllocationPolicyAbstract* d_alloc_policy = AllocationPolicyAbstract::get_FromStandardPolicy ( ) )
+   {      
+      [ClsName]Ref result;
+
+      new ( result.mAllocateMemForObject(d_alloc_policy) )[ClsName]([Parameters[,]: [[Name]]]);
+      result.mIncRef ( );
+		
+      return result;
+   }

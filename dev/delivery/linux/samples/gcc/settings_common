@@ -1,0 +1,16 @@
+#makefile settings for glib_compatibilty_tester all configurations
+
+PROJECT_NAME = glibsampleproject
+
+LIBS_STATIC    = pthread rt dl
+LIB_DIRS       = $(G_LIB) $(G_BIN)
+OBJECTS_DIR    = bin/$(CONF)
+OUTPUT_DIR     = bin/$(CONF)
+
+INCLUDE_DIRS = \
+	$(G_INCLUDE)/common \
+	$(G_INCLUDE)/unix \
+												
+SOURCE_DIRS = .
+	
+	

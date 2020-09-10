@@ -1,0 +1,26 @@
+#makefile settings for glib_compatibility all configurations
+
+PROJECT_NAME = glib_compatibility_gcc
+
+LIBS           = kernel32 Psapi Comdlg32 jvm Shlwapi
+LIB_DIRS       = $(G_LIB) $(G_JAVA_JDK_HOME)\lib $(G_BIN)
+OBJECTS_DIR    = $(realpath $(G_INTERMEDIATE))/$(PROJECT_NAME)/$(CONF)
+PRECOMPILE_DIR = $(realpath $(G_INTERMEDIATE))/$(PROJECT_NAME)
+
+OUTPUT_PREFIX = lib
+
+INCLUDE_DIRS = \
+	$(realpath \
+	$(G_INCLUDE)\common \
+	$(G_INCLUDE)\Win32 \
+	$(G_SOURCE)\common \
+	$(G_SOURCE)\Win32 \
+	$(G_JAVA_JDK_HOME)\include \
+	$(G_JAVA_JDK_HOME)\include\Win32 )
+												
+SOURCE_DIRS = \
+	$(realpath \
+	$(G_SOURCE)\common \
+	$(G_SOURCE)\Win32 )
+	
+	

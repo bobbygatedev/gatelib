@@ -1,0 +1,11 @@
+#makefile settings for glib_compatibilty_tester configuration debug
+
+CFLAGS  = $(NOOPTIMIZED_CFLAGS)
+	
+DEFINES = \
+	G_OPTION_IS_DLL=1 \
+	G_VERBOSE_LEVEL=0 \
+
+LIBS          = glib_compatibilityD
+OUTPUT_SUFFIX = D   
+

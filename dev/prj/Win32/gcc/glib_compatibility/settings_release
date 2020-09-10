@@ -1,0 +1,14 @@
+#makefile settings for glib_compatibilty configuration release
+
+CFLAGS  = $(OPTIMIZED_CFLAGS)
+
+LINKER_OPTIONS = -shared
+
+DEFINES = \
+	G_OPTION_IS_BUILD=1 \
+	G_OPTION_IS_DLL=1
+
+LIBS += pthreadGC2
+
+OUTPUT_EXT = .dll
+OUTPUT_DIR = $(realpath $(G_BIN))

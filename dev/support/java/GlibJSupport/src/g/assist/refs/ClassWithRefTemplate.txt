@@ -1,0 +1,11 @@
+#pragma once
+
+class [ClsName]Ref : public g::cont::ref<[ClsName]>
+{
+public:
+	
+[Constructors[]:[[Body]]]
+};
+
+
+

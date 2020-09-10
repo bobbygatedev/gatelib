@@ -1,0 +1,10 @@
+#makefile settings for glib_compatibility_tester configuration relase_static
+
+CFLAGS  = $(OPTIMIZED_CFLAGS)
+
+DEFINES = \
+	G_OPTION_IS_DLL=0 \
+
+OUTPUT_SUFFIX = _static
+
+LIBS = glib_compatibility_static $(LIBS_STATIC) 

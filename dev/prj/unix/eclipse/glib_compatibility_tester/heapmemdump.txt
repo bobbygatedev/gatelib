@@ -1,0 +1,2 @@
+Starting test GateLib test at Tue Jan 27 16:54:28 2015
+/home/riplab/glib/unix_output/tests/glib_compatibility_testerD raised UnhandledException exception!

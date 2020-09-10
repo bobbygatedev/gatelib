@@ -1,0 +1,8 @@
+call SetEnv
+
+md %G_INTERMEDIATE%
+echo on
+
+copy  %G_VISUAL_STUDIO_DEV% %G_INTERMEDIATE%
+start devenv %G_INTERMEDIATE%\%G_VISUAL_STUDIO_SOL_NAME%.sln
+
